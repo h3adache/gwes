@@ -4,6 +4,15 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Loved+by+the+King">
 
         <style>
+            body {
+                background-color: #000;
+            }
+
+            a {
+                text-decoration: none;
+                color: #00B2EE;
+            }
+
             #topnav {
                 font-family: 'Loved by the King', serif;
                 font-size: 3em;
@@ -45,10 +54,17 @@
             var data = [];
             for (var i = 1; i < 15; i++) {
                 var myImg = i + ".jpg";
-                data.push({image: "imgs/" + myImg, thumb: "tbs/" + myImg});
+                data.push({image: "imgs/" + myImg, thumb: "tbs/" + myImg, big: "imgs/" + myImg});
             }
 
-            $('#galleria').galleria({height: 400, preload:'all', dataSource:data});
+            $('#galleria').galleria({
+                height: 350,
+                dataSource: data,
+                preload: 'all',
+                autoplay: 3000,
+                lightbox: true,
+                debug: false
+            });
         </script>
     </body>
 </html>

@@ -4,15 +4,12 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Loved+by+the+King">
 
         <style>
-            body {
-            }
-
             #topnav {
                 font-family: 'Loved by the King', serif;
-                font-size: 4em;
+                font-size: 3em;
                 font-weight: bold;
                 text-shadow: 2px 2px 2px #cd0a0a;
-                margin-bottom: .3em;
+                margin-bottom: .1em;
                 color: #00B2EE;
             }
 
@@ -41,27 +38,17 @@
         <div id="topnav">George Washington Elementary</div>
         <div id="galleria"></div>
 
-        <div id="bottombar"><a href="http://imc-chicago.com" target="_blank">Designed by IMC Chicago</a></div>
+        <div id="bottombar"><a href="http://imc-chicago.com" target="_blank">Contributed by IMC Chicago</a></div>
         <script>
             Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
 
-            var data = [
-                {image: 'img/studentgroup1.jpg'},
-                {image: 'img/studentgroup2.jpg'},
-                {image: 'img/studentholidaygroup1.jpg'},
-                {image: 'img/studentholidaygroup2.jpg'},
-                {image: 'img/studentholidaygroup3.jpg'},
-                {image: 'img/studentholidaygroup4.jpg'},
-                {image: 'img/studentphoto1.jpg'},
-                {image: 'img/studentphoto2.jpg'},
-                {image: 'img/studentphoto3.jpg'},
-                {image: 'img/studentphoto4.jpg'},
-                {image: 'img/studentsatIMC1.jpg'},
-                {image: 'img/studentsatIMC2.jpg'},
-                {image: 'img/studentsatIMC3.jpg'}
-            ];
+            var data = [];
+            for (var i = 1; i < 15; i++) {
+                var myImg = i + ".jpg";
+                data.push({image: "imgs/" + myImg, thumb: "tbs/" + myImg});
+            }
 
-            $('#galleria').galleria({height: 500, preload:'all', dataSource:data});
+            $('#galleria').galleria({height: 400, preload:'all', dataSource:data});
         </script>
     </body>
 </html>

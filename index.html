@@ -2,3 +2,24 @@
 layout: default
 title: George Washington Elementary
 ---
+
+<div id="galleria"></div>
+
+<script>
+	Galleria.loadTheme('script/galleria/themes/classic/galleria.classic.min.js');
+
+	var data = [];
+	for (var i = 1; i < 15; i++) {
+		var myImg = i + ".jpg";
+		data.push({image: "imgs/" + myImg, thumb: "tbs/" + myImg});
+	}
+
+	$('#galleria').galleria({
+		height: 350,
+		dataSource: data,
+		preload: 'all',
+		autoplay: 3000,
+		lightbox: true,
+		debug: false
+	});
+</script>

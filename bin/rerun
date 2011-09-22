@@ -1,0 +1,2 @@
+#! /bin/bash
+rerun -p "{_layouts,imgs,script,tbs,.}/*.{jpg,js,html}" -- jekyll --server

@@ -1,3 +1,5 @@
 .idea
 *.iml
 *.sw[op]
+_site
+*.xcodeproj

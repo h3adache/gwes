@@ -1,139 +1,47 @@
 <!doctype html>
 <html>
-	<head>
-		<style>
+    <head>
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-			/* 
-			grey: 7A7B7A,
-			red: FF0100
-			blue: 0C6BBF
-			black: 010000
-			*/
+        <!-- css -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
 
-			html {
-				height: 100%;
-			}
+        <!-- scripts -->
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="scripts/galleria/galleria-1.2.5.min.js"></script>
 
-			body {
-				height: 100%;
-				background: #FAFAFA;
-				background: -moz-linear-gradient(#FAFAFA, #EAEAEA);
-				background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #FAFAFA),color-stop(1, #EAEAEA));
-				background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
-				background: -o-linear-gradient(#FAFAFA, #EAEAEA);
-				background: -ms-linear-gradient(#FAFAFA, #EAEAEA);
-				background: linear-gradient(#FAFAFA, #EAEAEA);
-			}
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        <!-- Topbar ================================================== -->
+        <div class="topbar">
+            <div class="topbar-inner">
+                <div class="container">
+                    <a class="brand" href="{{ site.baseurl }}/">George Washington Elementary</a>
+                    <ul class="nav">
+                        <li><a href="#news">News</a></li>
+                        <li><a href="{{ site.baseurl }}/teachers.html">Teachers</a></li>
+                        <li><a href="{{ site.baseurl }}/parents.html">Parents</a></li>
+                        <li><a href="{{ site.baseurl }}/students.html">Students</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			a {
-				text-decoration: none;
-				color: #0C6BBF;
-			}
-
-			#topnav {
-				margin-bottom: .1em;
-				color: #0C6BBF;
-				background-color: #DDD;
-				width: 100%;
-				background: #111;
-				background: -moz-linear-gradient(#444, #111);
-				background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
-				background: -webkit-linear-gradient(#444, #111);
-				background: -o-linear-gradient(#444, #111);
-				background: -ms-linear-gradient(#444, #111);
-				background: linear-gradient(#444, #111);
-			}
-
-			#topnav #title {
-				font-family: serif;
-				font-size: 2.5em;
-				font-weight: bold;
-				display: inline-block;
-				width: 50%;
-				vertical-align: sub;
-			}
-
-			#topnav ul {
-				list-style: none;
-				font-size: 1.5em;
-				font-weight: normal;
-				text-align: right;
-				display: inline-block;
-				width: 49%;
-				line-height: 2.5em;
-			}
-
-			#topnav ul li {
-				list-style: none;
-				display: inline-block;
-				border-left: 1px solid #FF0100;
-				padding: 0 0.3em;
-				margin-left: -0.3em;
-				height: 100%;
-			}
-
-			#topnav ul li:last-child {
-				border-right: 1px solid #FF0100;
-			}
-
-			#bottombar {
-				font-family: serif;
-				font-size: .6em;
-				padding-left: 1em;
-				text-align: right;
-				vertical-align: bottom;
-				letter-spacing: 0.25em;
-				color: #0C6BBF;
-				position: fixed;
-				bottom: 0;
-				right: 1%;
-				z-index: -1000;
-			}
-
-			#content {
-				width: 50%;
-				margin: auto;
-				margin-top: 2em;
-			}
-
-			h1, h2 {
-				padding-bottom: 0.5em;
-			}
-
-			.contact_info {
-				padding-left: 1em;
-			}
-		</style>
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="script/galleria/galleria-1.2.5.min.js"></script>
-
-		<title>{{ page.title }}</title>
-	</head>
-	<body>
-		<div id="topnav">
-			<span id="title">
-				<a href="{{ site.baseurl }}/">George Washington Elementary</a>
-			</span>
-
-			<ul>
-				<li><a href="{{ site.baseurl }}/teachers.html">Teachers</a></li>
-				<li><a href="{{ site.baseurl }}/parents.html">Parents</a></li>
-				<li><a href="{{ site.baseurl }}/students.html">Students</a></li>
-			</ul>
-		</div>
-
-		<div id="content">
-			{{ content }}
-		</div>
-
-		<div id="bottombar"><a href="http://imc-chicago.com" target="_blank">Contributed by IMC Chicago</a></div>
-	</body>
+        <div class="container">
+            {{ content }}
+            <footer>
+                <div class="container">
+                    <div class="span5 offset3"><img src="images/gws-200.png" /></div>
+                    <div class="span5">
+                        <p>&copy; 2011 - <a href="http://imc-chicago.com" target="_blank">IMC Chicago</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>

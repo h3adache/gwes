@@ -3,24 +3,64 @@ layout: default
 title: George Washington Elementary
 ---
 
-<h1>Check out some recent events!</h1>
-<div id="galleria"></div>
+<!-- Example row of columns -->
+<div class="row">
+    <div class="span-two-thirds" id="galleria"></div>
+    <div class="span-one-third">
+        <h2>Events</h2>
+        <dl>
+            <dt><span class="label important">Test in Algebra</span></dt>
+            <dd>00/00/0000 - In Ms XYZ's class</dd>
+            <dt><span class="label notice"><a href="#">PTA Meeting</a></span></dt>
+            <dd>00/00/0000 - Please remind your parents know about this early and often!</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span6">
+        <h2>School Painting</h2>
+
+        <p>You may have noticed some freshly painted walls in the school. This was due to a lot of hard but fun work</p>
+
+        <p><a class="btn" href="#">View pictures from the event &raquo;</a></p>
+    </div>
+    <div class="span5">
+        <h2>Heading</h2>
+
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+            magna mollis euismod. Donec sed odio dui. </p>
+
+        <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="span5">
+        <h2>Heading</h2>
+
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+            ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+        <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+</div>
 
 <script>
-	Galleria.loadTheme('script/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.loadTheme('scripts/galleria/themes/classic/galleria.classic.min.js');
 
-	var data = [];
-	for (var i = 1; i < 15; i++) {
-		var myImg = i + ".jpg";
-		data.push({image: "imgs/" + myImg, thumb: "tbs/" + myImg});
-	}
+    var data = [];
+    for (var i = 1; i < 15; i++) {
+        var myImg = i + ".jpg";
+        data.push({image: "images/" + myImg});
+    }
 
-	$('#galleria').galleria({
-		height: 350,
-		dataSource: data,
-		preload: 'all',
-		autoplay: 3000,
-		lightbox: true,
-		debug: false
-	});
+    $('#galleria').galleria({
+        height: 300,
+        dataSource: data,
+        preload: 'all',
+        autoplay: 3000,
+        thumbnails: "numbers",
+        lightbox: true,
+        debug: false
+    });
 </script>

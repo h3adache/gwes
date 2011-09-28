@@ -1,0 +1,29 @@
+---
+layout: default
+title: George Washington Elementary - Photos
+---
+
+<!-- Example row of columns -->
+<div class="row">
+    <div class="span16" id="galleria"></div>
+</div>
+
+<script>
+    Galleria.loadTheme('scripts/galleria/themes/classic/galleria.classic.min.js');
+
+    var data = [];
+    for (var i = 1; i < 15; i++) {
+        var myImg = i + ".jpg";
+        data.push({image: "images/" + myImg});
+    }
+
+    $('#galleria').galleria({
+        height: 500,
+        dataSource: data,
+        preload: 'all',
+        autoplay: 3000,
+        thumbnails: "numbers",
+        lightbox: true,
+        debug: false
+    });
+</script>

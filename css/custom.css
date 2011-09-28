@@ -22,6 +22,7 @@ body {
 }
 .topbar h3 a, .topbar .brand {
     color: #97BDBF;
+    font-size: 2em;
 }
 h2 {
     font-family: Helvetica, Helvetica Neue, Arial, sans-serif;

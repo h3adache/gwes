@@ -41,3 +41,12 @@ h2 {
     color: #97BDBF;
     font-size: 2em;
 }
+
+.contact {
+     list-style: none;
+     font-size: 1.5em;
+ }
+
+.handwriting {
+    font-family: 'Gochi Hand', cursive;
+}

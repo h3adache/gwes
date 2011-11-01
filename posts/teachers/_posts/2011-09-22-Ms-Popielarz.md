@@ -8,7 +8,7 @@ category: teachers
 =============
 
 <div class="row">
-    <div class="span3">
+    <div class="span5">
         <img src="{{ site.baseurl }}/images/teacher.png"/>
     </div>
     <div class="span5">

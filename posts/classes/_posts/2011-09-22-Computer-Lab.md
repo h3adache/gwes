@@ -1,29 +1,18 @@
 ---
 layout: default
-title: Ms. Eileen Popielarz
-category: teachers
+title: Computer Lab
+category: classes
 ---
 
 {{ page.title }}
 =============
 
-<div class="row">
-    <div class="span5">
-        <img src="{{ site.baseurl }}/images/teacher.png"/>
-    </div>
-    <div class="span5">
-        <ul class="contact handwriting">
-          <li>Email: EAPopielarz@cps.edu</li>
-          <li>Class: <a href="{{ site.baseurl }}/posts/classes/Computer-Lab.html">Computer Lab</a></li>
-          <li>Room: 200</li>
-        </ul>
-    </div>
-</div>
-
-Bio
+Your teacher
 -------------
+[Ms. Popielarz]({{site.baseurl}}/posts/teachers/Ms-Popielarz.html)
 
-Hello!  My name is Ms. Popielarz. I work in the Computer Lab in Room 200.
+What we learn
+-------------
 
 What do we do in the computer lab?
 Students learn about technology and its applications.
@@ -35,3 +24,7 @@ Our school is equipped with some of the latest technology products including: sm
 
 We use the software programs that are available to our students, such as:  CPS Student e-mail, CPS student Gradebook, ST Math, Compass Learning Odyssey, Achieve 3000, Type to Learn, Starfall, Microsoft Office, Microsoft PowerPoint, etc.
 Our school is equipped with some of the latest technology products including: smart boards, digital cameras, laptops, desktops, DVD recorders, IPADS, parent computer center, TV monitors, security cameras, security buzzers, etc.
+
+Class assignments
+--------------
+* 2011-11-31 - HTML basics

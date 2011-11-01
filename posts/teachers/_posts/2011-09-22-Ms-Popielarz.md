@@ -20,6 +20,8 @@ category: teachers
     </div>
 </div>
 
+<br/>
+
 Bio
 -------------
 

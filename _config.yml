@@ -1,3 +1,4 @@
 permalink: none
 baseurl: /gwes
 markdown: kramdown
+pygments: true

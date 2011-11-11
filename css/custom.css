@@ -50,3 +50,7 @@ h2 {
 .handwriting {
     font-family: 'Gochi Hand', cursive;
 }
+
+.contact a {
+    font-size: 1.5em;
+}
